@@ -1,19 +1,26 @@
 {
-  "name": "synapbox-challenge",
-  "version": "1.0.0",
-  "description": "Synapbox Services Code Challenge",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/idkan/Synapbox-Challenge.git"
-  },
-  "author": "Abraham Serena",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/idkan/Synapbox-Challenge/issues"
-  },
-  "homepage": "https://github.com/idkan/Synapbox-Challenge#readme"
+    "name": "synapbox-challenge",
+    "version": "1.0.0",
+    "description": "Synapbox Services Code Challenge",
+    "main": "server.js",
+	"type": "module",
+    "scripts": {
+        "start": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/idkan/Synapbox-Challenge.git"
+    },
+    "author": "Abraham Serena",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/idkan/Synapbox-Challenge/issues"
+    },
+    "homepage": "https://github.com/idkan/Synapbox-Challenge#readme",
+    "dependencies": {
+        "express": "^4.17.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
 }
