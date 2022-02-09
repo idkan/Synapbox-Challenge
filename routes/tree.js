@@ -1,17 +1,13 @@
 import { Router } from "express";
-import fs from "fs";
+
+import { getAnimals, createAnimal } from "../controllers/tree.js";
 
 const treeRouter = Router();
-const animalsDataPath = "./data/animals.json";
 
 /**
- * @api {get} /tree/animals Get all animals
+ * Routes Definitions
  */
-treeRouter.get('/', (req, res) => {
-    fs.readFile(animalsDataPath, (err, data) => {
-        if (err) throw err;
-        res.send(JSON.parse(data));
-    });
-});
+treeRouter.get('/', getAnimals);
+treeRouter.post('/', createAnimal);
 
 export default treeRouter;
